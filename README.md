@@ -1,1 +1,1 @@
-# S84_TopFunnyMomentbgmi.
+# S84_TopFunnyMomentbgmi
