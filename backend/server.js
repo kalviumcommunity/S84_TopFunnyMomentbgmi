@@ -3,6 +3,7 @@ const app = express();
 const connectToDb = require('./database/db')
 require('dotenv').config();
 
+
 app.use(express.json())
 const Port = process.env.PORT || 9090;
 const DB_url = process.env.DB_URL;
