@@ -1,15 +1,14 @@
-
-function LandingPage(){
-    return(
+function LandingPage() {
+    return (
         <>
-            <div>
-                <h1>This is my ASAP landing page
-                    <br/>
-                    Hello my name is sksham Nice to meet you.
-                    <h3>Here you can find the top silly moment happened in BGMI ever</h3>  
-                </h1>
+            <div className="container">
+                <h1 className="heading">Top BGMI Funny Moments</h1>
+                <div className="content">
+                    <p>Hello, my name is Sksham. Nice to meet you.</p>
+                </div>
             </div>
         </>
-    )
+    );
 }
-export default LandingPage
+
+export default LandingPage;
