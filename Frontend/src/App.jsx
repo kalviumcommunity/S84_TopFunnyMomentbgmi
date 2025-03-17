@@ -1,5 +1,6 @@
 import ClipCard from "./ClipCard";
 import LandingPage from "./LandingPage";
+import vidurl from './assets/bgmi clip.mp4'
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
                     title="Epic Grenade Fail!"
                     uploader="Sksham"
                     votes={42}
-                    videoUrl="https://www.w3schools.com/html/mov_bbb.mp4"
+                    videoUrl={vidurl}
                 />
             </div>
         </>
