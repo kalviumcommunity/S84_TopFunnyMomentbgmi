@@ -1,19 +1,19 @@
-import ClipCard from "./clipCard";
+import ClipCard from "./ClipCard";
 import LandingPage from "./LandingPage";
 
 function App() {
     return (
         <>
             <LandingPage />
-            <div className="mt-6">
+            <div className="clip-list">
                 <ClipCard
                     title="Epic Grenade Fail!"
                     uploader="Sksham"
                     votes={42}
-                    videoUrl="https://youtu.be/ttgAz_UQ9ic?si=fycO5eAU5JVV4Wsy"
+                    videoUrl="https://www.w3schools.com/html/mov_bbb.mp4"
                 />
             </div>
-        </>   
+        </>
     );
 }
 
