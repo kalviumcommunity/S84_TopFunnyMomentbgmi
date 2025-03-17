@@ -1,33 +1,28 @@
-
+/* Reset margins and padding for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page background and font settings */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #141e30, #243b55);
+    background: linear-gradient(135deg, #141e30, #243b55); /* Smooth dark gradient */
     color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 20px;
 }
 
-
+/* Main heading */
 .heading {
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
 }
 
+/* Centered content container */
 .content {
     display: flex;
     justify-content: center;
@@ -35,31 +30,84 @@ body {
     height: 60vh;
 }
 
-
+/* Stylish text box */
 .text-box {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
     width: 80%;
-    max-width: 500px;
-    line-height: 1.6;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
 }
 
+/* Hover effect */
 .text-box:hover {
     transform: scale(1.05);
 }
 
+/* Video Clip Card Styling */
+.clip-container {
+    background: #1e293b;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+}
 
+.clip-video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.clip-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clip-uploader {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.clip-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.clip-votes {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* Vote button */
+.vote-button {
+    background: #3b82f6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.vote-button:hover {
+    background: #2563eb;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
     .heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .text-box {
-        font-size: 1.3rem;
-        padding: 15px;
+        font-size: 1.2rem;
+        padding: 12px;
     }
 }
