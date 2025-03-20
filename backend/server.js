@@ -15,11 +15,11 @@ app.get("/", (req, res) => {
 app.use('/', RouteMoment);
 app.listen(Port, async() => {
     try{
-        await connectToDb(db_url);
+        await connectToDb(DB_url);
         console.log(`Server is running on port http://localhost:${Port}`);
-        console.log(`Successfull connected to database with url as ${db_url}`)
+        console.log(`Successfully connected to database with url as ${DB_url}`);
     }
     catch(err){
-        console.log(err)
+        console.log(err);
     }
-})
+});
