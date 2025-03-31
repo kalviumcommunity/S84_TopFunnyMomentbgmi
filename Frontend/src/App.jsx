@@ -1,10 +1,11 @@
 import ClipCard from "./ClipCard";
 import LandingPage from "./LandingPage";
-import vidurl from './assets/bgmi clip.mp4'
+import Display from "./Display";
+import vidurl from './assets/bgmi clip.mp4';
 
 function App() {
     return (
-        <>
+        <div className="app-container">
             <LandingPage />
             <div className="clip-list">
                 <ClipCard
@@ -14,7 +15,8 @@ function App() {
                     videoUrl={vidurl}
                 />
             </div>
-        </>
+            <Display />
+        </div>
     );
 }
 
