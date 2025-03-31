@@ -1,13 +1,14 @@
+import React from "react";
+
 function LandingPage() {
     return (
-        <>
-            <div className="container">
-                <h1 className="heading">Top BGMI Funny Moments</h1>
-                <div className="content">
-                    <p>Hello, my name is Sksham. Nice to meet you.</p>
-                </div>
-            </div>
-        </>
+        <div className="landing-page">
+            <h1 className="heading">Welcome TO MY ASAP PROJECT</h1>
+            <p className="text-box">
+                Explore the most epic video clips uploaded by users from around the world.
+            </p>
+            
+        </div>
     );
 }
 
